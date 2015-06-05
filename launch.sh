@@ -102,11 +102,11 @@ class { '::supervisord' :
 }
 
 supervisord::program { 'smbd' :
-  command => 'smbd -F -S',
+  command => 'smbd -D -F -S',
 }
 
 supervisord::program { 'nmbd' :
-  command => 'nmbd -F -S',
+  command => 'nmbd -D -F -S',
 }
 """
 
