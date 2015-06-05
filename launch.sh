@@ -63,6 +63,12 @@ samba::server::user { '$u' :
   password => '$p',
 }
 
+file { ['/run/samba'] :
+  ensure => directory,
+  owner => 'nobody',
+  group => 'nobody',
+}
+
 """
 
 echo 'Prepping server puppet code...'
@@ -107,8 +113,7 @@ supervisord::program { 'nmbd' :
 echo 'Applying puppet code for supervisord...'
 echo "$supervisord_template" > /tmp/supervisord.pp
 puppet apply /tmp/supervisord.pp
-	
+
 echo -e "\n\nDon't worry about those big scary puppet errors above."
 echo 'Giving supervisord a kick to get the ball rolling...'
 /usr/bin/supervisord -n
-
