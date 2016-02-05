@@ -52,7 +52,7 @@ class { 'samba::server' :
   workgroup => '$w',
   server_string => 'Samba Server',
   interfaces => 'eth0 lo',
-  security => 'share'
+  security => 'user'
 }
 
 user { '$u' :
