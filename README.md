@@ -5,7 +5,7 @@ Hosts samba shares. It's got some fun port requirements but that's about it.
 ## Running
 
     docker run --rm -it \
-      -e 'SHARENAMES=share1 share2' \
+      -e '"SHARENAMES=share1 share2"' \
       -e 'USER=samba' \
       -e 'PASSWORD=password' \
       -e 'WORKGROUP=WORKGROUP' \
