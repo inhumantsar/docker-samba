@@ -22,3 +22,8 @@ Hosts samba shares. It's got some fun port requirements but that's about it.
  - This is tested and working with Win10 clients, but the workgroup names must be identical.
  - Not intended for use in an AD domain, will not function as a Domain Controller.
  - Should work fine with volumes mounted from other containers.
+
+    Error: Could not start Service[supervisord]: Execution of '/usr/bin/systemctl start supervisord' returned 1: Failed to get D-Bus connection: Operation not permitted
+    Error: /Stage[main]/Supervisord::Service/Service[supervisord]/ensure: change from stopped to running failed: Could not start Service[supervisord]: Execution of '/usr/bin/systemctl start supervisord' returned 1: Failed to get D-Bus connection: Operation not permitted
+
+
