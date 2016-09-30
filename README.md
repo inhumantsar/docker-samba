@@ -2,6 +2,11 @@
 
 Hosts samba shares. It's got some fun port requirements but that's about it. 
 
+Proof that email spam works sometimes:
+[![](https://images.microbadger.com/badges/image/inhumantsar/samba.svg)](https://microbadger.com/images/inhumantsar/samba)
+[![](https://images.microbadger.com/badges/license/inhumantsar/samba.svg)](https://microbadger.com/images/inhumantsar/samba)
+[![](https://images.microbadger.com/badges/version/inhumantsar/samba.svg)](https://microbadger.com/images/inhumantsar/samba)
+
 ## Running
 
     docker run --rm -it \
